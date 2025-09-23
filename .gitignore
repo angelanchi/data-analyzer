@@ -1,0 +1,93 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Production builds
+dist/
+build/
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Database
+backend/data/
+*.db
+*.sqlite
+*.sqlite3
+
+# Uploads and exports
+backend/uploads/
+backend/exports/
+frontend/public/uploads/
+
+# Logs
+logs/
+*.log
+
+# Runtime data
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# TypeScript
+*.tsbuildinfo
+
+# Shared types compiled output (should be built during install)
+shared/types/*.js
+shared/types/*.d.ts
+shared/types/*.map
+!shared/types/index.ts
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Temporary folders
+tmp/
+temp/
+
+# Backup files
+*.backup
+*.bak
+# Analysis artifacts
+analysis_output/
+
+# --- public repo hygiene ---
+.claude/
+__pycache__/
+analysis_output/
+nul
+**/nul
+output (1).png
+lint_output.txt
+update_docs_script.txt
+data/FPC_Batch*.csv
+data/fpc_batch*.csv

@@ -1,0 +1,12 @@
+﻿{
+  "files": {
+    "Batch1": "../test_data.csv",
+    "Batch2": "../test_data_batch2.csv"
+  },
+  "params": ["Voltage", "Current"],
+  "targetParam": "Voltage",
+  "pointIds": ["P001", "P002"],
+  "groupBy": ["Operator"],
+  "flattenParams": ["Equipment_ID", "Batch_No"],
+  "outputDir": "analysis_output"
+}

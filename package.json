@@ -1,0 +1,49 @@
+{
+  "name": "data-analyzer",
+  "version": "1.0.0",
+  "description": "Data Analysis Web Application with Chart Generation and Collaboration Features",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently \"npm run frontend:dev\" \"npm run backend:dev\"",
+    "frontend:dev": "cd frontend && npm run dev",
+    "backend:dev": "cd backend && npm run dev",
+    "frontend:build": "cd frontend && npm run build",
+    "backend:build": "cd backend && npm run build",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install && cd ../shared/types && npm install",
+    "start": "concurrently \"npm run frontend:start\" \"npm run backend:start\"",
+    "frontend:start": "cd frontend && npm start",
+    "backend:start": "cd backend && npm start",
+    "lint": "npm run lint --prefix frontend && npm run lint --prefix backend",
+    "lint:fix": "npm run lint:fix --prefix frontend && npm run lint:fix --prefix backend",
+    "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "format:check": "prettier --check \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{ts,tsx,js,jsx}": [
+      "prettier --write",
+      "eslint --fix"
+    ],
+    "*.{json,md}": [
+      "prettier --write"
+    ]
+  },
+  "keywords": [
+    "data-analysis",
+    "visualization",
+    "charts",
+    "collaboration",
+    "react",
+    "nodejs"
+  ],
+  "author": "An9",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "concurrently": "^8.2.2",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6",
+    "prettier": "^3.6.2"
+  }
+}
